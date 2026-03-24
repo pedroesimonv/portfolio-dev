@@ -1,0 +1,19 @@
+.pixel-pattern {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+.glow-text {
+    text-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+}
+
+/* Animaciones de Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
