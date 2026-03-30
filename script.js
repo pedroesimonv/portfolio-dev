@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.3 
+        threshold: 0.05, 
+        rootMargin: "0px 0px -50px 0px"
     });
 
     //cerrar el bloque de animaciones
