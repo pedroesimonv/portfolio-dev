@@ -46,7 +46,7 @@
 </div>
 <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
     <a class="hover:text-primary transition-colors" href="#hero">Home</a>
-    <a class="hover:text-primary transition-colors" href="#portfolio">Proyectos</a>
+    <a class="hover:text-primary transition-colors wip-link" href="#">Proyectos</a> <!--Enlace a sección de proyectos (en desarrollo)-->
     <a class="hover:text-primary transition-colors" href="#about">Sobre mí</a>
     <a class="hover:text-primary transition-colors" href="#contact">Contacto</a>
 </nav>
@@ -81,8 +81,9 @@
     Descargar CV
 </a>
 <button class="w-full sm:w-auto px-8 py-4 bg-primary text-[#F6F6F6] font-bold rounded-lg hover:brightness-110 transition-all shadow-xl shadow-primary/30 flex items-center justify-center gap-2">
-<span class="material-symbols-outlined text-xl">rocket_launch</span>
-                        Mis Proyectos
+<a href="#" class="w-full sm:w-auto px-8 py-4 bg-primary text-[#F6F6F6] font-bold rounded-lg hover:brightness-110 transition-all shadow-xl shadow-primary/30 flex items-center justify-center gap-2 wip-link">
+    <span class="material-symbols-outlined text-xl">rocket_launch</span> Mis Proyectos
+</a>
                     </button>
 </div>
 <div class="flex justify-center gap-12 pt-16 opacity-40">
@@ -108,7 +109,7 @@
 </div>
 </section>
 
-
+<!--Sección de habilidades-->
 <section id="skills" class="reveal min-h-screen flex flex-col justify-center relative w-full max-w-4xl mx-auto py-20 px-6 z-10">
     <div class="mb-12">
         <h3 class="font-code text-2xl md:text-3xl font-bold text-[#F6F6F6] border-b border-primary/30 pb-2 inline-block glow-text">
@@ -135,9 +136,8 @@
             </div>
         </div>
     </div>
-    
+    <!--Habilidades representadas como cartas interactivas-->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        
         <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
                 <span class="material-symbols-outlined text-4xl text-slate-300">terminal</span>
@@ -228,7 +228,7 @@
 
     </div>
 </section>
-
+<!--Sección de proyectos-->
 <section id="portfolio" class="reveal min-h-screen flex flex-col justify-center relative w-full max-w-4xl mx-auto py-20 px-6 z-10">
     <div class="mb-12">
         <h3 class="font-code text-2xl md:text-3xl font-bold text-[#F6F6F6] border-b border-primary/30 pb-2 inline-block glow-text">
@@ -260,9 +260,9 @@
                     <a href="#" class="flex-1 text-center bg-primary/20 hover:bg-primary text-white border border-primary/50 hover:border-primary px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(138,43,226,0.2)]">
                         <span class="material-symbols-outlined text-[18px]">play_arrow</span> Demo
                     </a>
-                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
-                        <span class="material-symbols-outlined text-[18px]">code</span> GitHub
-                    </a>
+                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 wip-link">
+    <span class="material-symbols-outlined text-[18px]">code</span> GitHub
+</a>
                 </div>
             </div>
         </div>
@@ -289,7 +289,7 @@
                 </p>
                 
                 <div class="flex gap-3 mt-auto">
-                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
+                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 wip-link">
                         <span class="material-symbols-outlined text-[18px]">code</span> GitHub
                     </a>
                 </div>
@@ -317,7 +317,7 @@
                 </p>
                 
                 <div class="flex gap-3 mt-auto">
-                    <a href="#" class="flex-1 text-center bg-blue-600/20 hover:bg-blue-600 text-white border border-blue-600/50 hover:border-blue-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+                    <a href="#" class="flex-1 text-center bg-blue-600/20 hover:bg-blue-600 text-white border border-blue-600/50 hover:border-blue-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(59,130,246,0.2)] wip-link">
                         <span class="material-symbols-outlined text-[18px]">preview</span> Ver Demo Interactiva
                     </a>
                 </div>
@@ -346,7 +346,7 @@
                 </p>
                 
                 <div class="flex gap-3 mt-auto">
-                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
+                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 wip-link">
                         <span class="material-symbols-outlined text-[18px]">code</span> GitHub
                     </a>
                 </div>
@@ -786,9 +786,6 @@
 </section>
    
 
-        
-
-    
 </section>
 </main>
 <footer class="bg-background-dark py-8 px-6 border-t border-white/5">
@@ -797,9 +794,8 @@
                     © 2026 <span class="font-code text-slate-300">Pedro Simón</span>. All rights reserved.
                 </p>
 <div class="flex items-center gap-6">
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">GitHub</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">LinkedIn</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Twitter</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="https://github.com/PESV2526">GitHub</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="https://www.linkedin.com/in/pedro-simon-8a3764171/">LinkedIn</a>
 </div>
 </div>
 </footer>
@@ -816,5 +812,16 @@
 </div>
 
 <script src="script.js"></script>
+
+<div id="wip-toast" class="fixed bottom-24 right-8 bg-navy-deep/95 border border-yellow-500/50 rounded-lg p-4 shadow-[0_0_15px_rgba(234,179,8,0.2)] flex items-center gap-3 z-[100] transform translate-y-10 opacity-0 pointer-events-none transition-all duration-300 backdrop-blur-md">
+    <div class="bg-yellow-500/10 p-2 rounded-md text-yellow-400">
+        <span class="material-symbols-outlined text-2xl">construction</span>
+    </div>
+    <div>
+        <p class="font-code text-yellow-400 font-bold text-sm leading-tight">> SYSTEM_LOCKED</p>
+        <p class="text-slate-300 text-xs font-display mt-0.5">Módulo en fase de desarrollo (WIP).</p>
+    </div>
+
+</div>
 </body>
 </html>

@@ -164,4 +164,33 @@ document.addEventListener("DOMContentLoaded", () => {
             "retina_detect": true
         });
     }
+
+    // ==========================================
+    // 🚧 NOTIFICACIÓN DE TRABAJO EN PROGRESO (WIP)
+    // ==========================================
+    const wipLinks = document.querySelectorAll('.wip-link');
+    const wipToast = document.getElementById('wip-toast');
+    let toastTimeout;
+
+    if (wipLinks.length > 0 && wipToast) {
+        wipLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Evita que el enlace salte a otra página o arriba del todo
+
+                // Mostrar el toast
+                wipToast.classList.remove('translate-y-10', 'opacity-0', 'pointer-events-none');
+                wipToast.classList.add('translate-y-0', 'opacity-100');
+
+                // Reiniciar el temporizador si el usuario hace clic varias veces
+                clearTimeout(toastTimeout);
+                
+                // Ocultar después de 3 segundos
+                toastTimeout = setTimeout(() => {
+                    wipToast.classList.remove('translate-y-0', 'opacity-100');
+                    wipToast.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
+                }, 3000);
+            });
+        });
+    }
+    
 });
