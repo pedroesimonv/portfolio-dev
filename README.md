@@ -1,6 +1,6 @@
 # 🌌 Portfolio Web - Pedro Simón (Dev Quest Log)
 
-Bienvenido al repositorio de mi portfolio profesional. [cite_start]Soy **Pedro Simón**, estudiante de Desarrollo de Aplicaciones Multimedia (DAM) [cite: 1, 2, 18][cite_start], con enfoque en el desarrollo Full Stack (C#, SQL, HTML/CSS, JS) y aplicaciones móviles (Android)[cite: 7, 12, 19].
+Bienvenido al repositorio de mi portfolio profesional. Soy estudiante de Desarrollo de Aplicaciones Multimedia (DAM), con enfoque en el desarrollo Full Stack (C#, SQL, HTML/CSS, JS) y aplicaciones móviles (Android).
 
 Este proyecto ha sido diseñado desde cero buscando una estética "Dark Mode" relajante con sutiles toques *geek/gamer*, priorizando el rendimiento, la limpieza del código y la experiencia de usuario (UX).
 
@@ -21,15 +21,3 @@ Este proyecto se ha construido sin frameworks pesados de JavaScript para mantene
 - **Lógica e Interactividad:** Vanilla JavaScript (ES6+).
 - **Efectos Visuales:** Librería `particles.js`.
 - **Iconografía:** Material Symbols (Google).
-
-## 🎓 Modo Evaluación (Módulo IPE II)
-
-[cite_start]Este portfolio incluye las actividades evaluables del módulo de **IPE II** (Radar de Mercado, Semáforo de Autonomía y 5 Hitos de Valor)[cite: 32]. 
-
-Para mantener la limpieza visual del portfolio de cara a reclutadores, esta sección está **oculta por defecto**. 
-
-**Para activar la vista de evaluación:**
-1. Abre el archivo `script.js`.
-2. Localiza la variable de configuración en la parte superior:
-   ```javascript
-   const modoEvaluacionIPE = false;
