@@ -138,7 +138,8 @@
             </div>
         </div>
     </div>
-    <!--Habilidades representadas como cartas interactivas-->
+
+    <!--Habilidades-->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
@@ -230,6 +231,7 @@
 
     </div>
 </section>
+
 <!--Sección de proyectos-->
 <section id="portfolio" class="reveal min-h-screen flex flex-col justify-center relative w-full max-w-4xl mx-auto py-20 px-6 z-10">
     <div class="mb-12">
@@ -355,6 +357,65 @@
             </div>
         </div>
 
+        <!-- PROYECTO: REDISEÑO CLÍNICA FISIOTERAPIA -->
+<div class="bg-navy-deep/10 border border-slate-deep rounded-2xl p-6 hover:border-primary/50 transition-all group relative overflow-hidden flex flex-col h-full">
+    <!-- Encabezado de la Misión -->
+    <div class="flex justify-between items-start mb-4">
+        <div class="inline-flex items-center gap-2 bg-[#10101A] border border-slate-800 px-2.5 py-1 rounded">
+            <div class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,100,255,0.8)]"></div>
+            <span class="text-[10px] font-code text-slate-300 tracking-widest uppercase">Mission: UI/UX Refactor</span>
+        </div>
+        <span class="text-xs font-code text-slate-500">Junio 2026</span>
+    </div>
+
+    <!-- Título y Descripción -->
+    <h4 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-primary transition-colors font-display">
+        Proyecto Lepol San Vicente
+    </h4>
+    <p class="text-slate-400 text-sm font-display mb-4 leading-relaxed">
+        Auditoría técnica forense y rediseño completo de la plataforma web para un centro de fisioterapia local. Transformación de un sitio obsoleto y pesado en un producto digital optimizado, accesible y enfocado en la conversión de pacientes.
+    </p>
+
+    <!-- Puntos Clave del Log -->
+    <div class="space-y-2 mb-6 font-display text-xs text-slate-300 flex-1">
+        <div class="flex items-start gap-2">
+            <span class="text-primary font-code">></span>
+            <p><strong class="text-white">Diagnóstico WPO:</strong> Identificación de cuellos de botella críticos (LCP de 7.5s en móvil, 73 peticiones de red y penalización por constructores visuales antiguos).</p>
+        </div>
+        <div class="flex items-start gap-2">
+            <span class="text-primary font-code">></span>
+            <p><strong class="text-white">Auditoría WAVE:</strong> Corrección de barreras de accesibilidad, resolviendo decenas de errores de contraste, enlaces vacíos y falta de etiquetas semánticas.</p>
+        </div>
+        <div class="flex items-start gap-2">
+            <span class="text-primary font-code">></span>
+            <p><strong class="text-white">Estrategia UX:</strong> Reestructuración de la arquitectura de la información mediante la unificación de secciones y optimización del flujo de cita previa mediante enlaces de ancla.</p>
+        </div>
+    </div>
+
+    <!-- Tech Stack / Herramientas utilizadas -->
+    <div class="flex flex-wrap gap-1.5 mb-6">
+        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Figma AI</span>
+        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Lighthouse</span>
+        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">GTMetrix</span>
+        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">WAVE</span>
+        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">WordPress / Gutenberg</span>
+    </div>
+
+    <!-- Botones de Acción -->
+    <div class="flex gap-3 mt-auto">
+        <!-- Enlace a Figma (Abre en pestaña nueva) -->
+        <!-- NOTA: Recuerda cambiar el href por el enlace real de tu prototipo en Figma si lo deseas -->
+        <a href="https://nacre-domain-22194912.figma.site" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-slate-500 px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">visibility</span> Ver Figma
+        </a>
+        
+        <!-- Enlace a la futura Web (Conectado al sistema de bloqueo WIP que creamos) -->
+        <a href="#" class="wip-link flex-1 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white border border-primary/30 hover:border-primary px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">language</span> Visitar Web
+        </a>
+    </div>
+</div>
+
     </div>
 
 <!--Sección de actividades académicas y prácticas-->
@@ -380,7 +441,7 @@
                 <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">HTML5</span>
                 <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">CSS3</span>
             </div>
-            <a href="https://github.com/PESV2526/practica1_LenguajesDeMarca_2024_2025" class="text-xs font-bold text-slate-500 group-hover:text-slate-300 flex items-center gap-1 mt-auto transition-colors">
+            <a href="https://github.com/pedroesimonv/witcher-multichannel-wiki" class="text-xs font-bold text-slate-500 group-hover:text-slate-300 flex items-center gap-1 mt-auto transition-colors">
                 <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar repo
             </a>
         </div>
@@ -398,7 +459,7 @@
                 <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">HTML5</span>
                 <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">CSS3</span>
             </div>
-            <a href="https://github.com/PESV2526/practica2_LenguajesDeMarca_2024_2025" class="text-xs font-bold text-slate-500 group-hover:text-slate-300 flex items-center gap-1 mt-auto transition-colors">
+            <a href="https://github.com/pedroesimonv/corporate-catalog-refactor" class="text-xs font-bold text-slate-500 group-hover:text-slate-300 flex items-center gap-1 mt-auto transition-colors">
                 <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar repo
             </a>
            <a href="https://practica2-lenguajes-de-marca-2024-2.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-500 group-hover:text-cyan-400 flex items-center gap-1 mt-auto transition-colors">
@@ -674,7 +735,7 @@
                     <span class="material-symbols-outlined text-slate-600 group-hover:text-cyan-400 transition-colors">arrow_forward</span>
                 </a>
 
-                <a href="https://github.com/PESV2526" target="_blank" class="group flex items-center justify-between bg-[#10101A] border border-slate-700 hover:border-slate-400 p-4 rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:-translate-y-1">
+                <a href="https://github.com/pedroesimonv" target="_blank" class="group flex items-center justify-between bg-[#10101A] border border-slate-700 hover:border-slate-400 p-4 rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:-translate-y-1">
                     <div class="flex items-center gap-4">
                         <div class="bg-slate-800 text-slate-300 p-3 rounded-lg group-hover:bg-slate-700 group-hover:text-white transition-colors">
                             <span class="material-symbols-outlined">code</span>
