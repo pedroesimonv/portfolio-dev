@@ -245,359 +245,144 @@
         <h3 class="font-code text-2xl md:text-3xl font-bold text-[#F6F6F6] border-b border-primary/30 pb-2 inline-block glow-text">
             > MISSION_LOG.exe
         </h3>
-        <p class="text-slate-400 mt-2 font-display text-sm">Registro de proyectos desarrollados y aplicaciones desplegadas.</p>
+        <p class="text-slate-400 mt-2 font-display text-sm">Catálogo de aplicaciones desplegadas, sistemas refactorizados y proyectos activos.</p>
+        
+        <!-- Indicador visual de categoría / Pestaña -->
+        <div class="mt-6 inline-flex p-1 bg-navy-deep/20 border border-slate-deep/50 rounded-lg">
+            <span class="px-4 py-1.5 bg-primary text-white text-xs font-code font-bold rounded-md flex items-center gap-1.5 shadow-[0_0_10px_rgba(138,43,226,0.3)]">
+                <span class="material-symbols-outlined text-sm">deployed_code</span> DEPLOY_READY (5)
+            </span>
+        </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Cuadrícula Principal de Proyectos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
         
+        <!-- 1. STUDY PLANNER -->
         <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative">
-            
             <div class="aspect-video bg-[#0a0a10] relative overflow-hidden border-b border-slate-deep flex items-center justify-center">
                 <span class="material-symbols-outlined text-6xl text-slate-700 group-hover:text-primary transition-colors duration-500 group-hover:scale-110">
-                    deployed_code
+                    event_note
                 </span>
             </div>
-            <!--Proyecto de planificación de estudios-->
             <div class="p-6 flex flex-col flex-1">
                 <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">Study Planner</h4>
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-[10px] px-2 py-1 rounded border border-primary/40 text-primary font-code tracking-wider bg-primary/5">C#</span>
-                   <!-- <span class="text-[10px] px-2 py-1 rounded border border-cyan-500/40 text-cyan-400 font-code tracking-wider bg-cyan-500/5">SQL</span>-->
+                    <span class="text-[10px] px-2 py-1 rounded border border-primary/40 text-primary font-code tracking-wider bg-primary/5">C# / WinForms</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider">JSON Persistence</span>
                 </div>
                 <p class="text-slate-400 text-sm mb-6 flex-1 font-display">
-                    Aplicación de escritorio que organiza asignaturas, actividades y tiempos disponibles, generando un planning automático optimizado según prioridades y horarios.
+                    Aplicación de escritorio enfocada en la organización de asignaturas, tareas y tiempos disponibles, automatizando la generación de plannings optimizados.
                 </p>
                 <div class="flex gap-3 mt-auto">
-                    <a href="" class="flex-1 text-center bg-primary/20 hover:bg-primary text-white border border-primary/50 hover:border-primary px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(138,43,226,0.2)]">
+                    <a href="#" class="flex-1 text-center bg-primary/20 hover:bg-primary text-white border border-primary/50 hover:border-primary px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(138,43,226,0.2)] wip-link">
                         <span class="material-symbols-outlined text-[18px]">play_arrow</span> Demo
                     </a>
-                    <a href="https://github.com/pedroesimonv/StudyPlanner" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
-    <span class="material-symbols-outlined text-[18px]">code</span> GitHub
-</a>
+                    <a href="https://github.com/pedroesimonv/StudyPlanner" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
+                        <span class="material-symbols-outlined text-[18px]">code</span> GitHub
+                    </a>
                 </div>
             </div>
         </div>
 
-        <!--Unreal Engine-->
+        <!-- 2. POKÉMON RESCUE & TEAM MANAGER -->
         <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative">
-            
             <div class="aspect-video bg-[#0a0a10] relative overflow-hidden border-b border-slate-deep flex items-center justify-center">
                 <span class="material-symbols-outlined text-6xl text-slate-700 group-hover:text-primary transition-colors duration-500 group-hover:scale-110">
-                    videogame_asset
+                    catching_pokemon
                 </span>
             </div>
-            
             <div class="p-6 flex flex-col flex-1">
-                <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">Prototipo 3D Interactivo</h4>
-                
+                <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">Pokémon Rescue & Team Manager</h4>
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-[10px] px-2 py-1 rounded border border-primary/40 text-primary font-code tracking-wider bg-primary/5">Unreal Engine</span>
-                    <span class="text-[10px] px-2 py-1 rounded border border-cyan-500/40 text-cyan-400 font-code tracking-wider bg-cyan-500/5">Blueprints</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-primary/40 text-primary font-code tracking-wider bg-primary/5">PHP 8.x (PDO)</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-cyan-500/40 text-cyan-400 font-code tracking-wider bg-cyan-500/5">MySQL</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider">PokeAPI</span>
                 </div>
-                
                 <p class="text-slate-400 text-sm mb-6 flex-1 font-display">
-                    Desarrollo de un mini-juego interactivo. Implementación de mecánicas básicas, físicas y diseño de nivel como parte de mi especialización.
+                    Sistema gamificado de gestión de personal (RBAC) y coordinación de brigadas de emergencia en tiempo real. Controla el flujo clínico y disponibilidad de los activos operativos.
                 </p>
-                
                 <div class="flex gap-3 mt-auto">
-                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 wip-link">
+                    <a href="#" class="flex-1 text-center bg-primary/20 hover:bg-primary text-white border border-primary/50 hover:border-primary px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(138,43,226,0.2)] wip-link">
+                        <span class="material-symbols-outlined text-[18px]">play_arrow</span> Demo Web
+                    </a>
+                    <a href="https://github.com/pedroesimonv/AdoptaUnPokemon" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 wip-link">
                         <span class="material-symbols-outlined text-[18px]">code</span> GitHub
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-1 flex flex-col relative">
-            
-            <div class="aspect-video bg-[#0a0a10] relative overflow-hidden border-b border-slate-deep flex items-center justify-center">
-                <span class="material-symbols-outlined text-6xl text-slate-700 group-hover:text-blue-400 transition-colors duration-500 group-hover:scale-110">
-                    layers
-                </span>
-            </div>
-            <!--Proyecto de aplicación móvil multiplataforma-->
-            <div class="p-6 flex flex-col flex-1">
-                <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">App Multiplataforma</h4>
-                
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-[10px] px-2 py-1 rounded border border-blue-500/40 text-blue-400 font-code tracking-wider bg-blue-500/5">FlutterFlow</span>
-                    <span class="text-[10px] px-2 py-1 rounded border border-orange-500/40 text-orange-400 font-code tracking-wider bg-orange-500/5">Firebase</span>
+        <!-- 3. PLATAFORMA DE GESTIÓN CLÍNICA -->
+        <div class="bg-navy-deep/10 border border-slate-deep rounded-xl p-6 hover:border-primary/50 transition-all group relative overflow-hidden flex flex-col h-full">
+            <div class="flex justify-between items-start mb-4">
+                <div class="inline-flex items-center gap-2 bg-[#10101A] border border-slate-800 px-2.5 py-1 rounded">
+                    <div class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,100,255,0.8)]"></div>
+                    <span class="text-[10px] font-code text-slate-300 tracking-widest uppercase">UI/UX Refactor</span>
                 </div>
-                
-                <p class="text-slate-400 text-sm mb-6 flex-1 font-display">
-                    Desarrollo ágil de aplicación móvil multiplataforma (iOS/Android) utilizando enfoque low-code. Diseño visual de UI e integración de base de datos.
-                </p>
-                
-                <div class="flex gap-3 mt-auto">
-                    <a href="#" class="flex-1 text-center bg-blue-600/20 hover:bg-blue-600 text-white border border-blue-600/50 hover:border-blue-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(59,130,246,0.2)] wip-link">
-                        <span class="material-symbols-outlined text-[18px]">preview</span> Ver Demo Interactiva
-                    </a>
-                </div>
+                <span class="text-xs font-code text-slate-500">Junio 2026</span>
             </div>
-        </div>
-
-        <!--Android App-->
-        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(0,255,255,0.15)] hover:-translate-y-1 flex flex-col relative">
-            
-            <div class="aspect-video bg-[#0a0a10] relative overflow-hidden border-b border-slate-deep flex items-center justify-center">
-                <span class="material-symbols-outlined text-6xl text-slate-700 group-hover:text-cyan-400 transition-colors duration-500 group-hover:scale-110">
-                    android
-                </span>
-            </div>
-            
-            <div class="p-6 flex flex-col flex-1">
-                <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">App Mobile Android</h4>
-                
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-[10px] px-2 py-1 rounded border border-cyan-500/40 text-cyan-400 font-code tracking-wider bg-cyan-500/5">Android Studio</span>
-                    <span class="text-[10px] px-2 py-1 rounded border border-purple-400/40 text-purple-300 font-code tracking-wider bg-purple-500/5">Figma</span>
-                </div>
-                
-                <p class="text-slate-400 text-sm mb-6 flex-1 font-display">
-                    Desarrollo de aplicación nativa. Diseño de interfaces (UI/UX) enfocadas en la usabilidad y rendimiento del dispositivo.
-                </p>
-                
-                <div class="flex gap-3 mt-auto">
-                    <a href="#" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 wip-link">
-                        <span class="material-symbols-outlined text-[18px]">code</span> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROYECTO: REDISEÑO CLÍNICA FISIOTERAPIA -->
-<div class="bg-navy-deep/10 border border-slate-deep rounded-2xl p-6 hover:border-primary/50 transition-all group relative overflow-hidden flex flex-col h-full">
-    <!-- Encabezado de la Misión -->
-    <div class="flex justify-between items-start mb-4">
-        <div class="inline-flex items-center gap-2 bg-[#10101A] border border-slate-800 px-2.5 py-1 rounded">
-            <div class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,100,255,0.8)]"></div>
-            <span class="text-[10px] font-code text-slate-300 tracking-widest uppercase">Mission: UI/UX Refactor</span>
-        </div>
-        <span class="text-xs font-code text-slate-500">Junio 2026</span>
-    </div>
-
-    <!-- Título y Descripción -->
-    <h4 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-primary transition-colors font-display">
-        Proyecto Lepol San Vicente
-    </h4>
-    <p class="text-slate-400 text-sm font-display mb-4 leading-relaxed">
-        Auditoría técnica forense y rediseño completo de la plataforma web para un centro de fisioterapia local. Transformación de un sitio obsoleto y pesado en un producto digital optimizado, accesible y enfocado en la conversión de pacientes.
-    </p>
-
-    <!-- Puntos Clave del Log -->
-    <div class="space-y-2 mb-6 font-display text-xs text-slate-300 flex-1">
-        <div class="flex items-start gap-2">
-            <span class="text-primary font-code">></span>
-            <p><strong class="text-white">Diagnóstico WPO:</strong> Identificación de cuellos de botella críticos (LCP de 7.5s en móvil, 73 peticiones de red y penalización por constructores visuales antiguos).</p>
-        </div>
-        <div class="flex items-start gap-2">
-            <span class="text-primary font-code">></span>
-            <p><strong class="text-white">Auditoría WAVE:</strong> Corrección de barreras de accesibilidad, resolviendo decenas de errores de contraste, enlaces vacíos y falta de etiquetas semánticas.</p>
-        </div>
-        <div class="flex items-start gap-2">
-            <span class="text-primary font-code">></span>
-            <p><strong class="text-white">Estrategia UX:</strong> Reestructuración de la arquitectura de la información mediante la unificación de secciones y optimización del flujo de cita previa mediante enlaces de ancla.</p>
-        </div>
-    </div>
-
-    <!-- Tech Stack / Herramientas utilizadas -->
-    <div class="flex flex-wrap gap-1.5 mb-6">
-        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Figma AI</span>
-        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Lighthouse</span>
-        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">GTMetrix</span>
-        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">WAVE</span>
-        <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">WordPress / Gutenberg</span>
-    </div>
-
-    <!-- Botones de Acción -->
-    <div class="flex gap-3 mt-auto">
-        <!-- Enlace a Figma (Abre en pestaña nueva) -->
-        <!-- NOTA: Recuerda cambiar el href por el enlace real de tu prototipo en Figma si lo deseas -->
-        <a href="https://nacre-domain-22194912.figma.site" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-slate-500 px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
-            <span class="material-symbols-outlined text-[16px]">visibility</span> Ver Figma
-        </a>
-        
-        <!-- Enlace a la futura Web (Conectado al sistema de bloqueo WIP que creamos) -->
-        <a href="#" class="wip-link flex-1 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white border border-primary/30 hover:border-primary px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
-            <span class="material-symbols-outlined text-[16px]">language</span> Visitar Web
-        </a>
-    </div>
-</div>
-
-    </div>
-
-<!--Sección de actividades académicas y prácticas-->
-    <div class="mt-20 mb-8 w-full">
-        <h3 class="font-code text-xl md:text-2xl font-bold text-slate-300 border-b border-cyan-500/30 pb-2 inline-block">
-            > SIDE_QUESTS.exe
-        </h3>
-        <p class="text-slate-400 mt-2 font-display text-sm">Registro de prácticas académicas, mini-proyectos y código de entrenamiento (1º y 2º DAM).</p>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
-        
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-lg p-5 hover:border-slate-500 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden">
-            <div class="flex justify-between items-start mb-3">
-                <span class="material-symbols-outlined text-slate-500 group-hover:text-cyan-400 transition-colors text-3xl">html-css</span>
-                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">1º DAM</span>
-            </div>
-            <h4 class="font-bold text-slate-200 text-md mb-2 group-hover:text-cyan-400 transition-colors">Web Corporativa</h4>
-            <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
-                Maquetación frontend desde cero para la asignatura de Lenguajes de Marca, aplicando etiquetas semánticas y estilos en cascada.
+            <h4 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-primary transition-colors font-display">Plataforma de Gestión Clínica</h4>
+            <p class="text-slate-400 text-sm font-display mb-4 leading-relaxed flex-1">
+                Auditoría técnica forense y rediseño estructural para un centro de salud profesional. Optimización WPO radical y corrección de accesibilidad (WAVE) enfocada al paciente.
             </p>
-            <div class="flex flex-wrap gap-1 mb-4">
+            <div class="flex flex-wrap gap-1.5 mb-6">
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Figma UX</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Lighthouse</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">WAVE Audit</span>
+            </div>
+            <div class="flex gap-3 mt-auto">
+                <a href="https://nacre-domain-22194912.figma.site" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-slate-500 px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                    <span class="material-symbols-outlined text-[16px]">visibility</span> Ver Figma
+                </a>
+                <a href="#" class="wip-link flex-1 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white border border-primary/30 hover:border-primary px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                    <span class="material-symbols-outlined text-[16px]">language</span> Visitar Web
+                </a>
+            </div>
+        </div>
+
+        <!-- 4. WEB CORPORATIVA II -->
+        <div class="bg-navy-deep/10 border border-slate-deep rounded-xl p-6 hover:border-slate-400 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden">
+            <div class="flex justify-between items-start mb-3">
+                <span class="material-symbols-outlined text-slate-400 text-3xl">terminal</span>
+                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">Refactor</span>
+            </div>
+            <h4 class="font-bold text-slate-200 text-xl mb-2 group-hover:text-cyan-400 transition-colors">Web Corporativa</h4>
+            <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
+                Migración completa de un catálogo heredado a un stack moderno con Vite y Tailwind CSS v4, implementando renderizado estructurado dinámico.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
                 <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">HTML5</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">CSS3</span>
+                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">Tailwind v4</span>
+                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">Vite</span>
             </div>
-            <a href="https://github.com/pedroesimonv/witcher-multichannel-wiki" class="text-xs font-bold text-slate-400 group-hover:text-slate-200 flex items-center gap-1 mt-auto transition-colors">
-                <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar repo
-            </a>
+            <div class="flex gap-3 mt-auto">
+                <a href="https://github.com/pedroesimonv/corporate-catalog-refactor" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 px-2 py-1.5 rounded text-xs font-bold transition-all flex items-center justify-center gap-1">
+                    <span class="material-symbols-outlined text-[16px]">folder_open</span> Código
+                </a>
+                <a href="https://practica2-lenguajes-de-marca-2024-2.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-cyan-900/20 hover:bg-cyan-500 text-cyan-400 hover:text-white border border-cyan-500/30 px-2 py-1.5 rounded text-xs font-bold transition-all flex items-center justify-center gap-1">
+                    <span class="material-symbols-outlined text-[16px]">open_in_new</span> Despliegue
+                </a>
+            </div>
         </div>
 
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-lg p-5 hover:border-slate-500 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden">
+        <!-- 5. THE WITCHER WIKI -->
+        <div class="bg-navy-deep/10 border border-slate-deep rounded-xl p-6 hover:border-slate-400 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden md:col-span-2 max-w-md mx-auto w-full">
             <div class="flex justify-between items-start mb-3">
-                <span class="material-symbols-outlined text-slate-500 group-hover:text-cyan-400 transition-colors text-3xl">html-css</span>
-                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">1º DAM</span>
+                <span class="material-symbols-outlined text-slate-400 text-3xl">menu_book</span>
+                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">Frontend Base</span>
             </div>
-            <h4 class="font-bold text-slate-200 text-md mb-2 group-hover:text-cyan-400 transition-colors">Web Corporativa II</h4>
+            <h4 class="font-bold text-slate-200 text-xl mb-2 group-hover:text-cyan-400 transition-colors">The Witcher Multichannel Wiki</h4>
             <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
-                Refactorización de proyecto PHP a arquitectura moderna con Vite y Tailwind v4. Implementé renderizado dinámico (MySQL/JSON) y despliegue automatizado en Vercel con sistema híbrido.
+                Proyecto fundacional de maquetación semántica estructurada desde cero, aplicando principios rigurosos de CSS nativo.
             </p>
-            <div class="flex flex-wrap gap-1 mb-4">
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">HTML5</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">CSS3</span>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">HTML5 Semántico</span>
+                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">CSS Custom Props</span>
             </div>
-            <a href="https://github.com/pedroesimonv/corporate-catalog-refactor" class="text-xs font-bold text-slate-400 group-hover:text-slate-200 flex items-center gap-1 mt-auto transition-colors">
-                <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar repo
+            <a href="https://github.com/pedroesimonv/witcher-multichannel-wiki" target="_blank" rel="noopener noreferrer" class="text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 w-full mt-auto">
+                <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar Repositorio Completo
             </a>
-           <a href="https://practica2-lenguajes-de-marca-2024-2.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-400 group-hover:text-cyan-400 flex items-center gap-1 mt-auto transition-colors">
-    <span class="material-symbols-outlined text-[16px]">open_in_new</span> Ver Web Desplegada
-            </a>
-        </div>
-
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-lg p-5 hover:border-slate-500 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden">
-            <div class="flex justify-between items-start mb-3">
-                <span class="material-symbols-outlined text-slate-500 group-hover:text-primary transition-colors text-3xl">database</span>
-                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">1º DAM</span>
-            </div>
-            <h4 class="font-bold text-slate-200 text-md mb-2 group-hover:text-primary transition-colors">Diseño Relacional</h4>
-            <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
-                Script de creación, inserción y consultas complejas (JOINs, subconsultas) para un modelo de negocio simulado.
-            </p>
-            <div class="flex flex-wrap gap-1 mb-4">
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">SQL</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">MySQL / DDL</span>
-            </div>
-            <a href="#" class="wip-link text-xs font-bold text-slate-400 group-hover:text-slate-200 flex items-center gap-1 mt-auto transition-colors">
-                <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar repo
-            </a>
-        </div>
-
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-lg p-5 hover:border-slate-500 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden">
-            <div class="flex justify-between items-start mb-3">
-                <span class="material-symbols-outlined text-slate-500 group-hover:text-yellow-400 transition-colors text-3xl">terminal</span>
-                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">2º DAM</span>
-            </div>
-            <h4 class="font-bold text-slate-200 text-md mb-2 group-hover:text-yellow-400 transition-colors">Algoritmia C#</h4>
-            <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
-                Resolución de problemas de lógica de programación y estructuras de datos utilizando consola y POO.
-            </p>
-            <div class="flex flex-wrap gap-1 mb-4">
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">C#</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">.NET Core</span>
-            </div>
-            <a href="#" class="wip-link text-xs font-bold text-slate-400 group-hover:text-slate-200 flex items-center gap-1 mt-auto transition-colors">
-                <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar repo
-            </a>
-        </div>
-
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-lg p-5 hover:border-slate-500 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden">
-            <div class="flex justify-between items-start mb-3">
-                <span class="material-symbols-outlined text-slate-500 group-hover:text-emerald-400 transition-colors text-3xl">design_services</span>
-                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">IPE II</span>
-            </div>
-            <h4 class="font-bold text-slate-200 text-md mb-2 group-hover:text-emerald-400 transition-colors">UI/UX: App ODS</h4>
-            <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
-                Diseño de interfaz y prototipado interactivo para una aplicación móvil orientada a los Objetivos de Desarrollo Sostenible.
-            </p>
-            <div class="flex flex-wrap gap-1 mb-4">
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">Figma</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">Prototipado</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">Design Thinking</span>
-            </div>
-            <a href="https://www.figma.com/make/Mfktzfyy4yYOQmQjas341F/Match-%C3%89tico?fullscreen=1&t=bHdj6Vv8DKxq5MIB-1" class="text-xs font-bold text-slate-400 group-hover:text-slate-200 flex items-center gap-1 mt-auto transition-colors">
-                <span class="material-symbols-outlined text-[16px]">visibility</span> Ver Prototipo
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<section id="timeline" class="reveal min-h-screen flex flex-col justify-center relative w-full max-w-4xl mx-auto py-20 px-6 z-10">
-    <div class="mb-12">
-        <h3 class="font-code text-2xl md:text-3xl font-bold text-[#F6F6F6] border-b border-primary/30 pb-2 inline-block glow-text">
-            > QUEST_LOG.exe
-        </h3>
-        <p class="text-slate-400 mt-2 font-display text-sm">Historial de misiones: Educación y Experiencia.</p>
-    </div>
-
-    <div class="relative border-l-2 border-slate-deep ml-3 md:ml-6 space-y-12">
-        
-        <div class="relative pl-8 md:pl-12 group">
-            <div class="absolute -left-[17px] top-1 bg-[#10101A] border-2 border-primary text-primary rounded-full p-1 transition-transform duration-300 group-hover:scale-125 group-hover:shadow-[0_0_10px_rgba(138,43,226,0.5)]">
-                <span class="material-symbols-outlined text-[16px]">school</span>
-            </div>
-            
-            <div class="flex flex-col md:flex-row md:items-baseline gap-2 mb-2">
-                <h4 class="font-code text-xl font-bold text-slate-100 group-hover:text-primary transition-colors">Grado Superior DAM</h4>
-                <span class="text-xs font-code text-primary/70 bg-primary/10 px-2 py-1 rounded border border-primary/20 w-fit">2024 - Actualidad</span>
-            </div>
-            <p class="text-sm font-bold text-slate-300 mb-2">IES MARE NOSTRUM</p>
-            <p class="text-slate-400 text-sm font-display">
-                Foco: C#, SQL, Interfaces y Lenguajes de Marca.
-            </p>
-        </div>
-
-        <div class="relative pl-8 md:pl-12 group">
-            <div class="absolute -left-[17px] top-1 bg-[#10101A] border-2 border-cyan-500 text-cyan-400 rounded-full p-1 transition-transform duration-300 group-hover:scale-125 group-hover:shadow-[0_0_10px_rgba(0,255,255,0.5)]">
-                <span class="material-symbols-outlined text-[16px]">work</span>
-            </div>
-            
-            <div class="flex flex-col md:flex-row md:items-baseline gap-2 mb-2">
-                <h4 class="font-code text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition-colors">Mozo de Almacén (ETT)</h4>
-                <span class="text-xs font-code text-cyan-500/70 bg-cyan-500/10 px-2 py-1 rounded border border-cyan-500/20 w-fit">2024 - Actualidad</span>
-            </div>
-            <p class="text-slate-400 text-sm font-display">
-                Gestión logística y adaptabilidad en entornos de alta presión.
-            </p>
-        </div>
-
-        <div class="relative pl-8 md:pl-12 group">
-            <div class="absolute -left-[17px] top-1 bg-[#10101A] border-2 border-primary text-primary rounded-full p-1 transition-transform duration-300 group-hover:scale-125 group-hover:shadow-[0_0_10px_rgba(138,43,226,0.5)]">
-                <span class="material-symbols-outlined text-[16px]">school</span>
-            </div>
-            
-            <div class="flex flex-col md:flex-row md:items-baseline gap-2 mb-2">
-                <h4 class="font-code text-xl font-bold text-slate-100 group-hover:text-primary transition-colors">Certificado Profesional: Desarrollo Web</h4>
-                <span class="text-xs font-code text-slate-500 bg-slate-800 px-2 py-1 rounded border border-slate-700 w-fit">2023</span>
-            </div>
-            <p class="text-slate-400 text-sm font-display">
-                Full Stack: Programación Cliente/Servidor e Implantación.
-            </p>
-        </div>
-
-        <div class="relative pl-8 md:pl-12 group">
-            <div class="absolute -left-[17px] top-1 bg-[#10101A] border-2 border-cyan-500 text-cyan-400 rounded-full p-1 transition-transform duration-300 group-hover:scale-125 group-hover:shadow-[0_0_10px_rgba(0,255,255,0.5)]">
-                <span class="material-symbols-outlined text-[16px]">work</span>
-            </div>
-            
-            <div class="flex flex-col md:flex-row md:items-baseline gap-2 mb-2">
-                <h4 class="font-code text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition-colors">Encargado de Turno / Cajero</h4>
-                <span class="text-xs font-code text-slate-500 bg-slate-800 px-2 py-1 rounded border border-slate-700 w-fit">2018 - 2022</span>
-            </div>
-            <p class="text-sm font-bold text-slate-300 mb-2">Supermercado</p>
-            <p class="text-slate-400 text-sm font-display">
-                Responsable de arqueos, atención al cliente y coordinación de equipo.
-            </p>
         </div>
 
     </div>
