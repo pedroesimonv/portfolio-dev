@@ -41,12 +41,14 @@ if (heroSection && backToTopBtn) {
 }
 
     // Acción de click para subir suavemente
-    btnBackToTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
 
 // ==========================================
     // ✨ FONDO ANIMADO 8-BITS (Particles.js) - OPTIMIZADO
