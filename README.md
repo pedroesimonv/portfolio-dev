@@ -6,13 +6,10 @@
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
 <!-- ESPACIO PARA EL HERO GIF (Demostración de carga y scroll reveal) -->
-![Hero Demo](public\assets\hero-demo.gif)
+![Hero Demo](/public/assets/hero-demo.gif)
 *Vista de carga inicial y animaciones nativas de scroll calibradas para un rendimiento óptimo.*
 
 > Single Page Application (SPA) que centraliza mis proyectos técnicos bajo una estética "Dark Mode" relajante con toques RPG/Gamer. Construido con un enfoque riguroso en el rendimiento (Core Web Vitals), accesibilidad y SEO técnico, demostrando dominio de Vanilla JavaScript sin depender de frameworks pesados.
-
-## 📖 El Concepto
-Más que un simple escaparate visual, este portfolio es un proyecto de ingeniería orientada al rendimiento (WPO). Combina una experiencia de usuario (UX) inmersiva con una base técnica extremadamente limpia, logrando una puntuación perfecta (100) en las auditorías de Lighthouse al liberar completamente el hilo principal del navegador.
 
 ## 🚀 Características y UX (Features)
 
@@ -22,7 +19,7 @@ Más que un simple escaparate visual, este portfolio es un proyecto de ingenier�
 - **UI Responsiva y Proporcional:** Contenedores de proyectos fluidos basados en relaciones de aspecto nativas (`aspect-video`) para garantizar la integridad visual de las capturas en cualquier dispositivo.
 
 <!-- ESPACIO PARA LA CAPTURA DEL SKILL TREE (Demostrando el hover y el diseño de la tarjeta) -->
-![Skill Tree UI](public\assets\skill-tree-ui.png)
+![Skill Tree UI](/public/assets/skill-tree-ui.png)
 *Detalle interactivo del Skill Tree y revelación de niveles de tecnología.*
 
 ## 🏗️ Arquitectura y Decisiones Técnicas
@@ -33,7 +30,7 @@ Más que un simple escaparate visual, este portfolio es un proyecto de ingenier�
 - **Catálogo Dinámico:** Integración de proyectos Full Stack complejos (ej. *Smart Family Dashboard* con React, Node, WebSockets y Docker).
 
 <!-- ESPACIO PARA LA COMPARATIVA RESPONSIVE (Desktop vs Mobile) -->
-![Responsive Design](public\assets\responsive-mockup.png)
+![Responsive Design](/public/assets/responsive-mockup.png)
 *Adaptación fluida de la arquitectura del portfolio entre Desktop y Mobile.*
 
 ## ⚡ Optimizaciones Clave (SEO y Core Web Vitals)
