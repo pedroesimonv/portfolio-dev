@@ -3,42 +3,41 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     // 🎬 ANIMACIONES DE SCROLL (Intersection Observer)
     // ==========================================
-    const observer = new IntersectionObserver((entries) => {
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
             }
         });
     }, {
-        threshold: 0.05, 
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.15, 
+        rootMargin: "0px 0px -100px 0px"
     });
 
-    //cerrar el bloque de animaciones
     const hiddenElements = document.querySelectorAll('.reveal');
-    hiddenElements.forEach((el) => observer.observe(el));
+    hiddenElements.forEach((el) => revealObserver.observe(el));
 
-// ==========================================
+    // ==========================================
     // 🚀 BOTÓN VOLVER ARRIBA
     // ==========================================
     const heroSection = document.getElementById('hero');
-const backToTopBtn = document.getElementById('btn-back-to-top');
+    const backToTopBtn = document.getElementById('btn-back-to-top');
 
-if (heroSection && backToTopBtn) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
-                backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
-            } else {
-                backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
-                backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
-            }
-        });
-    }, { threshold: 0.1 });
+    if (heroSection && backToTopBtn) {
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                }
+            });
+        }, { threshold: 0.1 });
 
-    observer.observe(heroSection);
-}
+        heroObserver.observe(heroSection);
+    }
 
     // Acción de click para subir suavemente
     if (backToTopBtn) {
@@ -48,22 +47,6 @@ if (heroSection && backToTopBtn) {
                 behavior: 'smooth'
             });
         });
-    }
-
-// ==========================================
-    // ✨ FONDO ANIMADO 8-BITS (Particles.js) - OPTIMIZADO
-    // ==========================================
-    const isMobile = window.innerWidth <= 768;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const particlesContainer = document.getElementById('particles-js');
-
-    if (particlesContainer && !isMobile && !prefersReducedMotion) {
-        particlesJS("particles-js", {
-            // ... [PEGA AQUÍ TODA TU CONFIGURACIÓN ORIGINAL DESDE "particles": { ... HASTA "retina_detect": true] ...
-        });
-    } else if (particlesContainer) {
-        // Liberamos el DOM ocultando el div si estamos en móvil
-        particlesContainer.style.display = 'none';
     }
 
     // ==========================================

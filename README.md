@@ -1,23 +1,49 @@
-# 🌌 Portfolio Web - Pedro Simón (Dev Quest Log)
+# 🌌 Dev Quest Log - Portfolio Full Stack
 
-Bienvenido al repositorio de mi portfolio profesional. Soy estudiante de Desarrollo de Aplicaciones Multimedia (DAM), con enfoque en el desarrollo Full Stack (C#, SQL, HTML/CSS, JS) y aplicaciones móviles (Android).
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-Este proyecto ha sido diseñado desde cero buscando una estética "Dark Mode" relajante con sutiles toques *geek/gamer*, priorizando el rendimiento, la limpieza del código y la experiencia de usuario (UX).
+<!-- ESPACIO PARA EL HERO GIF (Demostración de carga y scroll reveal) -->
+![Hero Demo](docs/assets/hero-demo.gif)
+*Vista de carga inicial y animaciones nativas de scroll calibradas para un rendimiento óptimo.*
 
-## 🚀 Características Principales (Features)
+> Single Page Application (SPA) que centraliza mis proyectos técnicos bajo una estética "Dark Mode" relajante con toques RPG/Gamer. Construido con un enfoque riguroso en el rendimiento (Core Web Vitals), accesibilidad y SEO técnico, demostrando dominio de Vanilla JavaScript sin depender de frameworks pesados.
 
-- **Estética RPG/Consola:** Uso de tipografías monoespaciadas (`Fira Code`) y diseños inspirados en árboles de habilidades y registros de misiones.
-- **Skill Tree Interactivo:** Tarjetas de tecnologías que revelan el nivel de dominio ("Lv.") mediante efectos hover fluidos.
-- **Scroll Reveal (Intersection Observer):** Animaciones nativas en JavaScript puro que revelan las secciones suavemente a medida que el usuario hace scroll.
-- **Fondo Dinámico 8-Bits:** Implementación de `particles.js` para generar un efecto de píxeles flotantes (bajísimo consumo de recursos).
-- **Responsive Design:** Adaptación total a dispositivos móviles y tablets.
+## 📖 El Concepto
+Más que un simple escaparate visual, este portfolio es un proyecto de ingeniería orientada al rendimiento (WPO). Combina una experiencia de usuario (UX) inmersiva con una base técnica extremadamente limpia, logrando una puntuación perfecta (100) en las auditorías de Lighthouse al liberar completamente el hilo principal del navegador.
 
-## 🛠️ Stack Tecnológico
+## 🚀 Características y UX (Features)
 
-Este proyecto se ha construido sin frameworks pesados de JavaScript para mantener la máxima velocidad de carga:
+- **Estética RPG/Consola:** Uso de tipografías monoespaciadas (`Fira Code`) y diseños UI inspirados en registros de misiones.
+- **Skill Tree Interactivo:** Tarjetas de tecnologías que revelan el nivel de dominio ("Lv.") mediante transiciones y efectos hover fluidos.
+- **Scroll Reveal Nativo:** Animaciones de entrada gestionadas íntegramente con la API `Intersection Observer` de JavaScript puro, calibradas al milímetro (`threshold: 0.15`) para un renderizado perfecto.
+- **UI Responsiva y Proporcional:** Contenedores de proyectos fluidos basados en relaciones de aspecto nativas (`aspect-video`) para garantizar la integridad visual de las capturas en cualquier dispositivo.
 
-- **Estructura:** HTML5 Semántico.
-- **Estilos:** [Tailwind CSS](https://tailwindcss.com/) (vía CDN) + CSS3 Personalizado.
-- **Lógica e Interactividad:** Vanilla JavaScript (ES6+).
-- **Efectos Visuales:** Librería `particles.js`.
-- **Iconografía:** Material Symbols (Google).
+<!-- ESPACIO PARA LA CAPTURA DEL SKILL TREE (Demostrando el hover y el diseño de la tarjeta) -->
+![Skill Tree UI](docs/assets/skill-tree-ui.png)
+*Detalle interactivo del Skill Tree y revelación de niveles de tecnología.*
+
+## 🏗️ Arquitectura y Decisiones Técnicas
+
+- **Core:** HTML5 semántico y JavaScript Vanilla (ES6+). Manipulación directa del DOM y observadores aislados lógicamente para evitar colisiones.
+- **Estilos:** Tailwind CSS integrado para un diseño atómico, 100% responsive y escalable.
+- **Build Tooling:** Vite actúa como motor de compilación, garantizando un empaquetado ultrarrápido y optimización de *assets* estáticos para producción.
+- **Catálogo Dinámico:** Integración de proyectos Full Stack complejos (ej. *Smart Family Dashboard* con React, Node, WebSockets y Docker).
+
+<!-- ESPACIO PARA LA COMPARATIVA RESPONSIVE (Desktop vs Mobile) -->
+![Responsive Design](docs/assets/responsive-mockup.png)
+*Adaptación fluida de la arquitectura del portfolio entre Desktop y Mobile.*
+
+## ⚡ Optimizaciones Clave (SEO y Core Web Vitals)
+
+- **WPO (Web Performance Optimization):** Arquitectura sin dependencias gráficas pesadas (cero librerías de partículas) para evitar el bloqueo de renderizado y el *Cumulative Layout Shift* (CLS).
+- **SEO Técnico:** Configuración integral con `robots.txt`, `sitemap.xml` dinámico y etiquetas de metadatos Open Graph para maximizar la visibilidad orgánica.
+- **Accesibilidad Inclusiva:** Jerarquía de encabezados estricta, contraste de colores auditado y uso de etiquetas ARIA.
+
+## 🛠️ Instalación y Entorno Local
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/pedroesimonv/portfolio-dev
