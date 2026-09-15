@@ -337,51 +337,93 @@
             </div>
         </div>
 
-        <!-- 4. WEB CORPORATIVA II -->
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-xl p-6 hover:border-slate-400 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden">
-            <div class="flex justify-between items-start mb-3">
-                <span class="material-symbols-outlined text-slate-400 text-3xl">terminal</span>
-                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">Refactor</span>
+        <!-- 4. RENN FARWIND - WEB CORPORATIVA -->
+        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative">
+            
+            <!-- Imagen / Miniatura -->
+            <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
+                <img 
+                    src="/public/assets/renn-farwind.png" 
+                    alt="Web Corporativa Renn Farwind" 
+                    class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                >
+                <div class="absolute top-3 right-3 bg-[#10101A] border border-slate-700 text-slate-400 text-[10px] font-code px-2 py-1 rounded shadow-md">
+                    Refactor
+                </div>
             </div>
-            <h4 class="font-bold text-slate-200 text-xl mb-2 group-hover:text-cyan-400 transition-colors">Web Corporativa</h4>
-            <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
-                Migración completa de un catálogo heredado a un stack moderno con Vite y Tailwind CSS v4, implementando renderizado estructurado dinámico.
-            </p>
-            <div class="flex flex-wrap gap-1.5 mb-6">
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">HTML5</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">Tailwind v4</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">Vite</span>
-            </div>
-            <div class="flex gap-3 mt-auto">
-                <a href="https://github.com/pedroesimonv/corporate-catalog-refactor" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 px-2 py-1.5 rounded text-xs font-bold transition-all flex items-center justify-center gap-1">
-                    <span class="material-symbols-outlined text-[16px]">folder_open</span> Código
-                </a>
-                <a href="https://corporate-catalog-refactor.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-cyan-900/20 hover:bg-cyan-500 text-cyan-400 hover:text-white border border-cyan-500/30 px-2 py-1.5 rounded text-xs font-bold transition-all flex items-center justify-center gap-1">
-                    <span class="material-symbols-outlined text-[16px]">open_in_new</span> Despliegue
-                </a>
+
+            <!-- Contenido -->
+            <div class="p-6 flex flex-col flex-1">
+                <div class="flex justify-between items-center mb-3">
+                    <h4 class="font-bold text-slate-100 text-xl group-hover:text-cyan-400 transition-colors">Web Corporativa (Renn Farwind)</h4>
+                    <span class="material-symbols-outlined text-slate-500">terminal</span>
+                </div>
+                
+                <p class="text-sm text-slate-400 font-display mb-6 flex-1 leading-relaxed">
+                    Migración completa de un catálogo heredado a un stack moderno con Vite y Tailwind CSS v4, implementando renderizado estructurado dinámico.
+                </p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider bg-[#10101A]">HTML5</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider bg-[#10101A]">Tailwind v4</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider bg-[#10101A]">Vite</span>
+                </div>
+                
+                <!-- Enlaces (Botones) -->
+                <div class="flex gap-3 mt-auto">
+                    <a href="https://github.com/pedroesimonv/corporate-catalog-refactor" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1.5">
+                        <span class="material-symbols-outlined text-[18px]">code</span> Código
+                    </a>
+                    <a href="https://corporate-catalog-refactor.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-cyan-900/20 hover:bg-cyan-500 text-cyan-400 hover:text-white border border-cyan-500/30 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1.5">
+                        <span class="material-symbols-outlined text-[18px]">open_in_new</span> Despliegue
+                    </a>
+                </div>
             </div>
         </div>
 
         <!-- 5. THE WITCHER WIKI -->
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-xl p-6 hover:border-slate-400 hover:bg-slate-800/30 transition-all flex flex-col group relative overflow-hidden md:col-span-2 max-w-md mx-auto w-full">
-            <div class="flex justify-between items-start mb-3">
-                <span class="material-symbols-outlined text-slate-400 text-3xl">menu_book</span>
-                <span class="text-[10px] font-code border border-slate-700 bg-[#10101A] text-slate-400 px-2 py-1 rounded">Frontend Base</span>
+        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative md:col-span-2 max-w-md mx-auto w-full">
+            
+            <!-- Imagen / Miniatura -->
+            <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
+                <img 
+                    src="/public/assets/witcher-wiki.png" 
+                    alt="Vista de The Witcher Multichannel Wiki" 
+                    class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                >
+                <div class="absolute top-3 right-3 bg-[#10101A] border border-slate-700 text-slate-400 text-[10px] font-code px-2 py-1 rounded shadow-md">
+                    Frontend Base
+                </div>
             </div>
-            <h4 class="font-bold text-slate-200 text-xl mb-2 group-hover:text-cyan-400 transition-colors">The Witcher Multichannel Wiki</h4>
-            <p class="text-xs text-slate-400 font-display mb-4 flex-1 leading-relaxed">
-                Proyecto fundacional de maquetación semántica estructurada desde cero, aplicando principios rigurosos de CSS nativo.
-            </p>
-            <div class="flex flex-wrap gap-1.5 mb-6">
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">HTML5 Semántico</span>
-                <span class="text-[9px] px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">CSS Custom Props</span>
+
+            <!-- Contenido -->
+            <div class="p-6 flex flex-col flex-1">
+                <div class="flex justify-between items-center mb-3">
+                    <h4 class="font-bold text-slate-100 text-xl group-hover:text-cyan-400 transition-colors">The Witcher Multichannel Wiki</h4>
+                    <span class="material-symbols-outlined text-slate-500">menu_book</span>
+                </div>
+                
+                <p class="text-sm text-slate-400 font-display mb-6 flex-1 leading-relaxed">
+                    Proyecto fundacional de maquetación semántica estructurada desde cero, aplicando principios rigurosos de CSS nativo.
+                </p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider bg-[#10101A]">HTML5 Semántico</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider bg-[#10101A]">CSS Custom Props</span>
+                </div>
+                
+                <!-- Enlaces (Botones) -->
+                <div class="flex flex-col gap-3 mt-auto">
+                    <a href="https://witcher-multichannel-wiki.vercel.app/adaptaciones.html" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-primary/20 hover:bg-primary text-white border border-primary/50 hover:border-primary px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1.5 shadow-[0_0_10px_rgba(138,43,226,0.2)]">
+                        <span class="material-symbols-outlined text-[18px]">language</span> Visitar Web
+                    </a>
+                    <a href="https://github.com/pedroesimonv/witcher-multichannel-wiki" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1.5">
+                        <span class="material-symbols-outlined text-[18px]">code</span> GitHub
+                    </a>
+                </div>
             </div>
-            <a href="https://github.com/pedroesimonv/witcher-multichannel-wiki" target="_blank" rel="noopener noreferrer" class="text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 w-full mt-auto">
-                <span class="material-symbols-outlined text-[16px]">folder_open</span> Explorar Repositorio Completo
-            </a>
-            <a href="https://witcher-multichannel-wiki.vercel.app/adaptaciones.html" class="flex-1 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white border border-primary/30 hover:border-primary px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
-                    <span class="material-symbols-outlined text-[16px]">language</span> Visitar Web
-                </a>
         </div>
 
         <!-- PROYECTO: ATELIER ÉLIE -->
