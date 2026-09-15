@@ -242,12 +242,24 @@
             > MISSION_LOG.exe
         </h3>
         <p class="text-slate-400 mt-2 font-display text-sm">Catálogo de aplicaciones desplegadas, sistemas refactorizados y proyectos activos.</p>
-        
-        <!-- Indicador visual de categoría / Pestaña -->
-        <div class="mt-6 inline-flex p-1 bg-navy-deep/20 border border-slate-deep/50 rounded-lg">
-            <span class="px-4 py-1.5 bg-primary text-white text-xs font-code font-bold rounded-md flex items-center gap-1.5 shadow-[0_0_10px_rgba(138,43,226,0.3)]">
-                <span class="material-symbols-outlined text-sm">deployed_code</span> DEPLOY_READY (5)
-            </span>
+    
+        <!-- Selector de Misiones (Filtros) -->
+        <div class="mt-8 mb-6 flex flex-wrap gap-3 font-code text-sm" id="project-filters">
+            <button class="filter-btn active px-4 py-2 bg-primary/20 text-primary border border-primary/50 rounded-lg hover:bg-primary hover:text-white transition-all shadow-[0_0_10px_rgba(138,43,226,0.2)]" data-filter="all">
+                [ Todos ]
+            </button>
+            <button class="filter-btn px-4 py-2 bg-[#10101A] text-slate-400 border border-slate-700 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all" data-filter="fullstack">
+                [ Full Stack ]
+            </button>
+            <button class="filter-btn px-4 py-2 bg-[#10101A] text-slate-400 border border-slate-700 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all" data-filter="frontend">
+                [ Frontend ]
+            </button>
+            <button class="filter-btn px-4 py-2 bg-[#10101A] text-slate-400 border border-slate-700 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all" data-filter="desktop">
+                [ Desktop ]
+            </button>
+            <button class="filter-btn px-4 py-2 bg-[#10101A] text-slate-400 border border-slate-700 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all" data-filter="ui-ux">
+                [ UI/UX ]
+            </button>
         </div>
     </div>
 
@@ -255,12 +267,17 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
         
         <!-- 1. STUDY PLANNER -->
-        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative">
-            <div class="aspect-video bg-[#0a0a10] relative overflow-hidden border-b border-slate-deep flex items-center justify-center">
-                <span class="material-symbols-outlined text-6xl text-slate-700 group-hover:text-primary transition-colors duration-500 group-hover:scale-110">
-                    event_note
-                </span>
+        <div class="project-card group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative" data-category="desktop">
+            
+            <!-- Imagen / Miniatura -->
+        <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
+                <div class="w-full h-full flex flex-col items-center justify-center bg-navy-deep/30">
+                    <span class="material-symbols-outlined text-5xl text-primary/40 mb-2">terminal</span>
+                    <span class="font-code text-xs text-slate-500 tracking-widest uppercase">> AWAITING_ASSET...</span>
+                </div>
             </div>
+
+            <!-- Contenido -->
             <div class="p-6 flex flex-col flex-1">
                 <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">Study Planner</h4>
                 <div class="flex flex-wrap gap-2 mb-4">
@@ -282,12 +299,17 @@
         </div>
 
         <!-- 2. POKÉMON RESCUE & TEAM MANAGER -->
-        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative">
-            <div class="aspect-video bg-[#0a0a10] relative overflow-hidden border-b border-slate-deep flex items-center justify-center">
-                <span class="material-symbols-outlined text-6xl text-slate-700 group-hover:text-primary transition-colors duration-500 group-hover:scale-110">
-                    catching_pokemon
-                </span>
+        <div class="project-card group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative" data-category="fullstack">
+            
+            <!-- Imagen / Miniatura -->
+            <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
+                <div class="w-full h-full flex flex-col items-center justify-center bg-navy-deep/30">
+                    <span class="material-symbols-outlined text-5xl text-primary/40 mb-2">terminal</span>
+                    <span class="font-code text-xs text-slate-500 tracking-widest uppercase">> AWAITING_ASSET...</span>
+                </div>
             </div>
+
+            <!-- Contenido -->
             <div class="p-6 flex flex-col flex-1">
                 <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">Pokémon Rescue & Team Manager</h4>
                 <div class="flex flex-wrap gap-2 mb-4">
@@ -302,7 +324,7 @@
                     <a href="#" class="flex-1 text-center bg-primary/20 hover:bg-primary text-white border border-primary/50 hover:border-primary px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1 shadow-[0_0_10px_rgba(138,43,226,0.2)] wip-link">
                         <span class="material-symbols-outlined text-[18px]">play_arrow</span> Demo Web
                     </a>
-                    <a href="https://github.com/pedroesimonv/AdoptaUnPokemon" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
+                    <a href="https://github.com/pedroesimonv/AdoptaUnPokemon" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
                         <span class="material-symbols-outlined text-[18px]">code</span> GitHub
                     </a>
                 </div>
@@ -310,35 +332,50 @@
         </div>
 
         <!-- 3. PLATAFORMA DE GESTIÓN CLÍNICA -->
-        <div class="bg-navy-deep/10 border border-slate-deep rounded-xl p-6 hover:border-primary/50 transition-all group relative overflow-hidden flex flex-col h-full">
-            <div class="flex justify-between items-start mb-4">
-                <div class="inline-flex items-center gap-2 bg-[#10101A] border border-slate-800 px-2.5 py-1 rounded">
-                    <div class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,100,255,0.8)]"></div>
-                    <span class="text-[10px] font-code text-slate-300 tracking-widest uppercase">UI/UX Refactor</span>
+        <div class="project-card group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative" data-category="ui-ux">
+            
+            <!-- Imagen / Miniatura -->
+            <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
+                <img 
+                    src="/public/assets/clinica-figma.png" 
+                    alt="Web Corporativa Renn Farwind" 
+                    class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                >
+                <div class="absolute top-3 right-3 bg-[#10101A] border border-slate-700 text-slate-400 text-[10px] font-code px-2 py-1 rounded shadow-md flex items-center gap-1">
+                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,100,255,0.8)]"></div>
+                    UI/UX Refactor
                 </div>
-                <span class="text-xs font-code text-slate-500">Junio 2026</span>
             </div>
-            <h4 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-primary transition-colors font-display">Plataforma de Gestión Clínica</h4>
-            <p class="text-slate-400 text-sm font-display mb-4 leading-relaxed flex-1">
-                Auditoría técnica forense y rediseño estructural para un centro de salud profesional. Optimización WPO radical y corrección de accesibilidad (WAVE) enfocada al paciente.
-            </p>
-            <div class="flex flex-wrap gap-1.5 mb-6">
-                <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Figma UX</span>
-                <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Lighthouse</span>
-                <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">WAVE Audit</span>
-            </div>
-            <div class="flex gap-3 mt-auto">
-                <a href="https://nacre-domain-22194912.figma.site" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-slate-500 px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
-                    <span class="material-symbols-outlined text-[16px]">visibility</span> Ver Figma
-                </a>
-                <a href="#" class="wip-link flex-1 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white border border-primary/30 hover:border-primary px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
-                    <span class="material-symbols-outlined text-[16px]">language</span> Visitar Web
-                </a>
+
+            <!-- Contenido -->
+            <div class="p-6 flex flex-col flex-1">
+                <div class="flex justify-between items-start mb-4">
+                    <h4 class="text-xl font-bold text-slate-100 group-hover:text-primary transition-colors font-display">Plataforma de Gestión Clínica</h4>
+                    <span class="text-[10px] font-code text-slate-500 whitespace-nowrap ml-2">Junio 2026</span>
+                </div>
+                
+                <p class="text-slate-400 text-sm font-display mb-4 leading-relaxed flex-1">
+                    Auditoría técnica forense y rediseño estructural para un centro de salud profesional. Optimización WPO radical y corrección de accesibilidad (WAVE) enfocada al paciente.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-6">
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Figma UX</span>
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">Lighthouse</span>
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-[#10101A] border border-slate-800 text-slate-400 font-code">WAVE Audit</span>
+                </div>
+                <div class="flex gap-3 mt-auto">
+                    <a href="https://nacre-domain-22194912.figma.site" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-slate-500 px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                        <span class="material-symbols-outlined text-[16px]">visibility</span> Ver Figma
+                    </a>
+                    <a href="#" class="wip-link flex-1 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white border border-primary/30 hover:border-primary px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                        <span class="material-symbols-outlined text-[16px]">language</span> Visitar Web
+                    </a>
+                </div>
             </div>
         </div>
 
         <!-- 4. RENN FARWIND - WEB CORPORATIVA -->
-        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative">
+        <div class="project-card group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative" data-category="frontend">
             
             <!-- Imagen / Miniatura -->
             <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
@@ -383,9 +420,8 @@
         </div>
 
         <!-- 5. THE WITCHER WIKI -->
-        <div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative md:col-span-2 max-w-md mx-auto w-full">
-            
-            <!-- Imagen / Miniatura -->
+<div class="project-card group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative" data-category="frontend">            
+    <!-- Imagen / Miniatura -->
             <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
                 <img 
                     src="/public/assets/witcher-wiki.png" 
@@ -397,7 +433,6 @@
                     Frontend Base
                 </div>
             </div>
-
             <!-- Contenido -->
             <div class="p-6 flex flex-col flex-1">
                 <div class="flex justify-between items-center mb-3">
@@ -426,34 +461,39 @@
             </div>
         </div>
 
-        <!-- PROYECTO: ATELIER ÉLIE -->
-<div class="group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative">
-    <div class="aspect-video bg-[#0a0a10] relative overflow-hidden border-b border-slate-deep flex items-center justify-center">
-        <span class="material-symbols-outlined text-6xl text-slate-700 group-hover:text-primary transition-colors duration-500 group-hover:scale-110">
-            shopping_bag
-        </span>
-    </div>
-    <div class="p-6 flex flex-col flex-1">
-        <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">Atelier Élie — E-Commerce</h4>
-        <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-[10px] px-2 py-1 rounded border border-primary/40 text-primary font-code tracking-wider bg-primary/5">PHP 8.2 (PDO)</span>
-            <span class="text-[10px] px-2 py-1 rounded border border-cyan-500/40 text-cyan-400 font-code tracking-wider bg-cyan-500/5">MySQL 8.0</span>
-            <span class="text-[10px] px-2 py-1 rounded border border-blue-500/40 text-blue-400 font-code tracking-wider bg-blue-500/5">Docker</span>
-            <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider">OWASP Hardening</span>
+       <!-- PROYECTO: ATELIER ÉLIE -->
+        <div class="project-card group bg-navy-deep/20 border border-slate-deep rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,43,226,0.15)] hover:-translate-y-1 flex flex-col relative" data-category="fullstack">
+            
+            <!-- Imagen / Miniatura -->
+            <div class="relative w-full aspect-video overflow-hidden bg-[#0a0a10] border-b border-slate-deep">
+                <div class="w-full h-full flex flex-col items-center justify-center bg-navy-deep/30">
+                    <span class="material-symbols-outlined text-5xl text-primary/40 mb-2">terminal</span>
+                    <span class="font-code text-xs text-slate-500 tracking-widest uppercase">> AWAITING_ASSET...</span>
+                </div>
+            </div>
+
+            <!-- Contenido -->
+            <div class="p-6 flex flex-col flex-1">
+                <h4 class="font-code text-xl font-bold text-slate-100 mb-3 group-hover:text-[#F6F6F6] transition-colors">Atelier Élie — E-Commerce</h4>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-[10px] px-2 py-1 rounded border border-primary/40 text-primary font-code tracking-wider bg-primary/5">PHP 8.2 (PDO)</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-cyan-500/40 text-cyan-400 font-code tracking-wider bg-cyan-500/5">MySQL 8.0</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-blue-500/40 text-blue-400 font-code tracking-wider bg-blue-500/5">Docker</span>
+                    <span class="text-[10px] px-2 py-1 rounded border border-slate-700 text-slate-400 font-code tracking-wider">OWASP Hardening</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 flex-1 font-display">
+                   Plataforma e-commerce transaccional con arquitectura modular en PHP nativo (sin frameworks). Implementa control estricto de concurrencia de inventario mediante transacciones PDO atómicas y capas de seguridad web defensiva (OWASP).
+                </p>
+                <div class="flex gap-3 mt-auto">
+                    <a href="https://github.com/pedroesimonv/tienda-corbatas-php" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
+                        <span class="material-symbols-outlined text-[18px]">code</span> GitHub
+                    </a>
+                </div>
+            </div>
         </div>
-        <p class="text-slate-400 text-sm mb-6 flex-1 font-display">
-           Plataforma e-commerce transaccional con arquitectura modular en PHP nativo (sin frameworks). Implementa control estricto de concurrencia de inventario mediante transacciones PDO atómicas y capas de seguridad web defensiva (OWASP).
-        </p>
-        <div class="flex gap-3 mt-auto">
-            <a href="https://github.com/pedroesimonv/tienda-corbatas-php" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-800/50 hover:bg-slate-700 text-slate-300 border border-slate-600 px-3 py-2 rounded text-sm font-bold transition-all flex items-center justify-center gap-1">
-                <span class="material-symbols-outlined text-[18px]">code</span> GitHub
-            </a>
-        </div>
-    </div>
-</div>
 
 <!-- Tarjeta Proyecto: Smart Family Dashboard -->
-<article class="flex flex-col bg-[#1A1E29] border border-slate-700/50 rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
+<article class="project-card flex flex-col bg-[#1A1E29] border border-slate-700/50 rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300" data-category="fullstack">
   <!-- Imagen / Miniatura -->
   <div class="relative w-full aspect-video overflow-hidden bg-slate-800 border-b border-slate-700/50">
     <img 
