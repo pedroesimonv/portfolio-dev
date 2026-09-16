@@ -125,110 +125,163 @@
         <div class="mt-6 flex flex-wrap gap-4 text-xs font-code text-slate-400 bg-navy-deep/10 p-3 rounded-lg border border-slate-deep/50 w-fit">
             <div class="flex items-center gap-2">
                 <div class="w-2 h-2 rounded-full bg-slate-500"></div>
-                <span><strong class="text-slate-300">Lv. 1-30:</strong> Fundamentos</span>
+                <span><strong class="text-slate-300">Lv. 10-25:</strong> Fundamentos</span>
             </div>
             <div class="flex items-center gap-2">
                 <div class="w-2 h-2 rounded-full bg-[#00FFFF] shadow-[0_0_5px_rgba(0,255,255,0.5)]"></div>
-                <span><strong class="text-slate-300">Lv. 31-60:</strong> Autonomía</span>
+                <span><strong class="text-slate-300">Lv. 26-40:</strong> Autonomía Básica</span>
             </div>
             <div class="flex items-center gap-2">
                 <div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_5px_rgba(138,43,226,0.5)]"></div>
-                <span><strong class="text-slate-300">Lv. 61-90:</strong> Especialización</span>
+                <span><strong class="text-slate-300">Lv. 41-60:</strong> Base Sólida</span>
             </div>
-            <div class="flex items-center gap-2">
-                <div class="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_5px_rgba(249,115,22,0.5)]"></div>
-                <span><strong class="text-slate-300">Lv. 90+:</strong> Experto / Senior</span>
+            <div class="flex items-center gap-2 opacity-50">
+                <div class="w-2 h-2 rounded-full bg-orange-500"></div>
+                <span><strong class="text-slate-300">Lv. 60+:</strong> Senior (En progreso)</span>
             </div>
         </div>
     </div>
 
+   <!-- Filtros de Habilidades -->
+    <div class="mt-8 mb-6 flex flex-wrap gap-3 font-code text-sm" id="skill-filters">
+        <button class="skill-filter-btn active px-4 py-2 bg-primary/20 text-primary border border-primary/50 rounded-lg hover:bg-primary hover:text-white transition-all shadow-[0_0_10px_rgba(138,43,226,0.2)]" data-filter="all">
+            [ Core ]
+        </button>
+        <button class="skill-filter-btn px-4 py-2 bg-[#10101A] text-slate-400 border border-slate-700 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all" data-filter="frontend">
+            [ Frontend ]
+        </button>
+        <button class="skill-filter-btn px-4 py-2 bg-[#10101A] text-slate-400 border border-slate-700 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all" data-filter="backend">
+            [ Backend & DB ]
+        </button>
+        <button class="skill-filter-btn px-4 py-2 bg-[#10101A] text-slate-400 border border-slate-700 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all" data-filter="ui-mobile">
+            [ UI/UX & Mobile ]
+        </button>
+    </div>
+
     <!--Habilidades-->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" id="skill-grid">
+        
+        <!-- BACKEND & DB -->
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="backend">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
                 <span class="material-symbols-outlined text-4xl text-slate-300">terminal</span>
                 <span class="font-display font-bold text-slate-200">C#</span>
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Clase Principal</span>
-                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 80</span>
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Base Sólida</span>
+                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 55</span>
             </div>
         </div>
 
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="backend">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
                 <span class="material-symbols-outlined text-4xl text-slate-300">database</span>
-                <span class="font-display font-bold text-slate-200">SQL</span>
+                <span class="font-display font-bold text-slate-200">SQL / MySQL</span>
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Especialización</span>
-                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 75</span>
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Base Sólida</span>
+                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 50</span>
             </div>
         </div>
 
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="backend">
+            <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
+                <span class="material-symbols-outlined text-4xl text-slate-300">dns</span>
+                <span class="font-display font-bold text-slate-200">Node.js</span>
+            </div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Autonomía</span>
+                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 40</span>
+            </div>
+        </div>
+
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="backend">
+            <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
+                <span class="material-symbols-outlined text-4xl text-slate-300">inventory_2</span>
+                <span class="font-display font-bold text-slate-200">Docker</span>
+            </div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Autonomía</span>
+                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 35</span>
+            </div>
+        </div>
+
+        <!-- FRONTEND -->
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="frontend">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
                 <span class="material-symbols-outlined text-4xl text-slate-300">html</span>
-                <span class="font-display font-bold text-slate-200">HTML/CSS</span>
+                <span class="font-display font-bold text-slate-200">HTML / CSS</span>
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Base</span>
-                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 70</span>
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Base Sólida</span>
+                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 55</span>
             </div>
         </div>
 
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="frontend">
+            <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
+                <span class="material-symbols-outlined text-4xl text-slate-300">palette</span>
+                <span class="font-display font-bold text-slate-200">Tailwind CSS</span>
+            </div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Base Sólida</span>
+                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 50</span>
+            </div>
+        </div>
+
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="frontend">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
                 <span class="material-symbols-outlined text-4xl text-slate-300">javascript</span>
                 <span class="font-display font-bold text-slate-200">JavaScript</span>
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Activa</span>
-                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 65</span>
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Autonomía</span>
+                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 40</span>
             </div>
         </div>
 
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="frontend">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
-                <span class="material-symbols-outlined text-4xl text-slate-300">smartphone</span>
-                <span class="font-display font-bold text-slate-200">Android</span>
+                <span class="material-symbols-outlined text-4xl text-slate-300">code_blocks</span>
+                <span class="font-display font-bold text-slate-200">React</span>
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Especialización</span>
-                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 85</span>
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Autonomía</span>
+                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 35</span>
             </div>
         </div>
 
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
-            <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
-                <span class="material-symbols-outlined text-4xl text-slate-300">view_in_ar</span>
-                <span class="font-display font-bold text-slate-200">Unreal</span>
-            </div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Especialización</span>
-                <span class="font-code text-primary font-bold text-2xl drop-shadow-[0_0_8px_rgba(138,43,226,0.8)]">Lv. 70</span>
-            </div>
-        </div>
-
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
-            <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
-                <span class="material-symbols-outlined text-4xl text-slate-300">layers</span>
-                <span class="font-display font-bold text-slate-200">FlutterFlow</span>
-            </div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Secundaria</span>
-                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 50</span>
-            </div>
-        </div>
-
-        <div class="group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]">
+        <!-- UI/UX & MOBILE -->
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="ui-mobile">
             <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
                 <span class="material-symbols-outlined text-4xl text-slate-300">draw</span>
                 <span class="font-display font-bold text-slate-200">Figma</span>
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Soporte</span>
-                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 40</span>
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Autonomía</span>
+                <span class="font-code text-[#00FFFF] font-bold text-2xl drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]">Lv. 35</span>
+            </div>
+        </div>
+
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="ui-mobile">
+            <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
+                <span class="material-symbols-outlined text-4xl text-slate-300">smartphone</span>
+                <span class="font-display font-bold text-slate-200">Android</span>
+            </div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Fundamentos</span>
+                <span class="font-code text-slate-400 font-bold text-2xl drop-shadow-[0_0_8px_rgba(148,163,184,0.8)]">Lv. 20</span>
+            </div>
+        </div>
+        
+        <div class="skill-card group relative bg-navy-deep/20 border border-slate-deep rounded-lg p-6 text-center overflow-hidden cursor-crosshair transition-all duration-300 hover:border-primary/60 hover:bg-slate-deep/40 hover:shadow-[0_0_15px_rgba(138,43,226,0.2)]" data-category="ui-mobile">
+            <div class="transition-transform duration-300 group-hover:-translate-y-8 group-hover:opacity-0 flex flex-col items-center gap-2">
+                <span class="material-symbols-outlined text-4xl text-slate-300">layers</span>
+                <span class="font-display font-bold text-slate-200">FlutterFlow</span>
+            </div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Fundamentos</span>
+                <span class="font-code text-slate-400 font-bold text-2xl drop-shadow-[0_0_8px_rgba(148,163,184,0.8)]">Lv. 15</span>
             </div>
         </div>
 
