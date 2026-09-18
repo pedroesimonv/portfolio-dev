@@ -23,3 +23,52 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ==========================================
+   TIPOGRAFÍAS LOCALES (Self-Hosted)
+   ========================================== */
+
+/* INTER - 400 (Regular) */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block; /* Mantiene a 0 el CLS */
+    src: url('/assets/fonts/inter-regular.woff2') format('woff2');
+}
+
+/* INTER - 700 (Bold) */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: url('/assets/fonts/inter-bold.woff2') format('woff2');
+}
+
+/* INTER - 900 (Black) */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('/assets/fonts/inter-black.woff2') format('woff2');
+}
+
+/* FIRA CODE - 400 (Regular) */
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('/assets/fonts/fira-code-regular.woff2') format('woff2');
+}
+
+/* FIRA CODE - 700 (Bold) */
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: url('/assets/fonts/fira-code-bold.woff2') format('woff2');
+}

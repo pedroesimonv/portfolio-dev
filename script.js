@@ -3,15 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     // 🎬 ANIMACIONES DE SCROLL (Intersection Observer)
     // ==========================================
-    const revealObserver = new IntersectionObserver((entries) => {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+                // Buena práctica: Dejar de observar el elemento una vez que ya ha aparecido
+                observer.unobserve(entry.target); 
             }
         });
     }, {
-        threshold: 0.15, 
-        rootMargin: "0px 0px -100px 0px"
+        threshold: 0.05, 
+        rootMargin: "0px 0px 0px 0px" 
     });
 
     const hiddenElements = document.querySelectorAll('.reveal');
@@ -87,14 +89,15 @@ document.addEventListener("DOMContentLoaded", () => {
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 //Quitar estilo activo de todos los botones
+                // Quitar estilo activo de todos los botones
                 filterBtns.forEach(b => {
-                    b.classList.remove('bg-primary/20', 'text-primary', 'border-primary/50', 'shadow-[0_0_10px_rgba(138,43,226,0.2)]', 'active');
-                    b.classList.add('bg-[#10101A]', 'text-slate-400', 'border-slate-700');
+                    b.classList.remove('bg-primary/20', 'text-purple-400', 'border-primary/50', 'shadow-[0_0_10px_rgba(138,43,226,0.2)]', 'active');
+                    b.classList.add('bg-[#10101A]', 'text-slate-300', 'border-slate-700');
                 });
 
-                //Poner estilo activo al botón clickeado
-                btn.classList.remove('bg-[#10101A]', 'text-slate-400', 'border-slate-700');
-                btn.classList.add('bg-primary/20', 'text-primary', 'border-primary/50', 'shadow-[0_0_10px_rgba(138,43,226,0.2)]', 'active');
+                // Poner estilo activo al botón clickeado
+                btn.classList.remove('bg-[#10101A]', 'text-slate-300', 'border-slate-700');
+                btn.classList.add('bg-primary/20', 'text-purple-400', 'border-primary/50', 'shadow-[0_0_10px_rgba(138,43,226,0.2)]', 'active');
 
                 const filterValue = btn.getAttribute('data-filter');
 
@@ -162,6 +165,45 @@ document.addEventListener("DOMContentLoaded", () => {
                     }, 300);
                 });
             });
+        });
+    }
+
+    // ==========================================
+    // 🖼️ MODAL DE IMÁGENES (Galería de Proyectos)
+    // ==========================================
+    const imageModal = document.getElementById('image-modal');
+    // Asegúrate de añadir la clase 'modal-trigger' a las imágenes que quieras hacer clic
+    const modalTriggers = document.querySelectorAll('.modal-trigger'); 
+    
+    if (imageModal) {
+        //Función para abrir el modal
+        modalTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                // Intercambio correcto de clases
+                imageModal.classList.remove('hidden');
+                imageModal.classList.add('flex');
+                
+                // Animación de entrada (opacidad)
+                setTimeout(() => {
+                    imageModal.classList.remove('opacity-0');
+                    imageModal.classList.add('opacity-100');
+                }, 10);
+            });
+        });
+
+        //Función para cerrar el modal al hacer clic en el fondo oscuro
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                // Animación de salida
+                imageModal.classList.remove('opacity-100');
+                imageModal.classList.add('opacity-0');
+                
+                // Esperar a que termine la transición para ocultarlo del DOM
+                setTimeout(() => {
+                    imageModal.classList.remove('flex');
+                    imageModal.classList.add('hidden');
+                }, 300);
+            }
         });
     }
     
